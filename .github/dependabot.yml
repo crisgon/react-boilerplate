@@ -1,0 +1,30 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "08:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@babel/core"
+    versions:
+    - 7.13.1
+    - 7.13.10
+    - 7.13.13
+    - 7.13.14
+    - 7.13.15
+    - 7.13.8
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+    - 4.0.2
+  - dependency-name: ts-jest
+    versions:
+    - 26.5.1
+    - 26.5.2
+    - 26.5.3
+    - 26.5.4
+  - dependency-name: node-notifier
+    versions:
+    - 8.0.1
